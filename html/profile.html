@@ -1,0 +1,29 @@
+<div id="outer1">
+  <div class="profile">
+    <div>{{name}}
+    <h4>New Activity</h4>
+    <div id="act">
+      <input type="text" ng-model="act"/>
+      <button class="roundcorner" ng-click="addActivity(act)">submit</button>
+    </div>
+      <div>
+        <h3>Activities</h3>
+        <ul>
+          <li ng-repeat="activity in result">
+            {{activity[0]}} {{activity[1]}} {{activity[2]}}
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Friends</h3>
+        <ul>
+          <li ng-repeat="friend in friends">
+            {{friend}}
+          </li>
+        </ul>
+      </div>
+      <div >
+      <button class="roundcorner" id="moretruth-button" ui-sref="users">Change User</button> 
+    </div>
+  </div>
+</div>
